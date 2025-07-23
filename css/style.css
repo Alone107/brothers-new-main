@@ -124,6 +124,7 @@ img {
   z-index: 99;
   padding: 20px;
   margin-left: -20px;
+  cursor: pointer;
 }
 
 .burger {
