@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,600&family=Montaga&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-row">
+        <div id="burger" class="header-menu-btn">
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span>меню</span>
+        </div>
+        <div class="burger-empty"></div>
+        <h2 class="header-title">
+          мы не делаем дизайн. <br />
+          мы создаем <br />
+          визуальные смыслы
+        </h2>
+        <a href="tel:+79033440444" class="header-tel">+79033440444</a>
+      </div>
+      <div id="header-menu" class="header-menu">
+        <div id="close-burger" class="close-row">
+          <div class="close">
+            <span></span>
+            <span></span>
+          </div>
+          <span>Выход</span>
+        </div>
+        <div class="download">
+          <a href="#">Скачать презентацию</a>
+          <a href="#">Сми о нас</a>
+        </div>
+        <div class="menu-uslugi">
+          <div class="menu-uslugi-title">Услуги</div>
+          <a href="#">Бренд-платформа </a>
+          <a href="#"> Упаковка инвест-проекта </a>
+          <a href="#"> Мерч/подарки </a>
+          <a href="#"> Муралы/граффити </a>
+          <a href="#"> Дизайн рекламы </a>
+          <a href="#"> Моушн промо-ролики </a>
+        </div>
+
+        <div class="menu-social">
+          <a href="#">
+            <svg
+              width="44"
+              height="43"
+              viewBox="0 0 44 43"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.91 9.77129C36.91 11.5381 35.4777 12.9703 33.7109 12.9703C31.9441 12.9703 30.5119 11.5381 30.5119 9.77129C30.5119 8.0045 31.9441 6.57224 33.7109 6.57224C35.4777 6.57224 36.91 8.0045 36.91 9.77129Z"
+                fill="#EAE6DB"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M21.9811 32.1647C27.8704 32.1647 32.6446 27.3904 32.6446 21.5011C32.6446 15.6119 27.8704 10.8376 21.9811 10.8376C16.0918 10.8376 11.3176 15.6119 11.3176 21.5011C11.3176 27.3904 16.0918 32.1647 21.9811 32.1647ZM21.9811 27.8993C25.5146 27.8993 28.3792 25.0347 28.3792 21.5011C28.3792 17.9676 25.5146 15.103 21.9811 15.103C18.4475 15.103 15.583 17.9676 15.583 21.5011C15.583 25.0347 18.4475 27.8993 21.9811 27.8993Z"
+                fill="#EAE6DB"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.654053 20.6481C0.654053 13.4815 0.654053 9.89824 2.04876 7.16098C3.27557 4.75322 5.23314 2.79565 7.6409 1.56884C10.3782 0.174133 13.9614 0.174133 21.128 0.174133H22.8341C30.0007 0.174133 33.584 0.174133 36.3212 1.56884C38.729 2.79565 40.6866 4.75322 41.9134 7.16098C43.3081 9.89824 43.3081 13.4815 43.3081 20.6481V22.3542C43.3081 29.5208 43.3081 33.104 41.9134 35.8413C40.6866 38.2491 38.729 40.2066 36.3212 41.4335C33.584 42.8282 30.0007 42.8282 22.8341 42.8282H21.128C13.9614 42.8282 10.3782 42.8282 7.6409 41.4335C5.23314 40.2066 3.27557 38.2491 2.04876 35.8413C0.654053 33.104 0.654053 29.5208 0.654053 22.3542V20.6481ZM21.128 4.43954H22.8341C26.4878 4.43954 28.9715 4.44285 30.8913 4.59971C32.7613 4.75249 33.7177 5.02943 34.3848 5.36934C35.99 6.18722 37.295 7.49226 38.1129 9.09744C38.4528 9.76454 38.7297 10.7209 38.8825 12.5909C39.0394 14.5107 39.0427 16.9944 39.0427 20.6481V22.3542C39.0427 26.0079 39.0394 28.4916 38.8825 30.4114C38.7297 32.2814 38.4528 33.2378 38.1129 33.9049C37.295 35.51 35.99 36.8151 34.3848 37.633C33.7177 37.9729 32.7613 38.2498 30.8913 38.4026C28.9715 38.5594 26.4878 38.5628 22.8341 38.5628H21.128C17.4743 38.5628 14.9906 38.5594 13.0708 38.4026C11.2008 38.2498 10.2445 37.9729 9.57736 37.633C7.97218 36.8151 6.66713 35.51 5.84926 33.9049C5.50935 33.2378 5.23241 32.2814 5.07963 30.4114C4.92277 28.4916 4.91946 26.0079 4.91946 22.3542V20.6481C4.91946 16.9944 4.92277 14.5107 5.07963 12.5909C5.23241 10.7209 5.50935 9.76454 5.84926 9.09744C6.66713 7.49226 7.97218 6.18722 9.57736 5.36934C10.2445 5.02943 11.2008 4.75249 13.0708 4.59971C14.9906 4.44285 17.4743 4.43954 21.128 4.43954Z"
+                fill="#EAE6DB"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              width="28"
+              height="29"
+              viewBox="0 0 28 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.0722656 0.312805V28.0379L27.7974 14.1754L0.0722656 0.312805Z"
+                fill="#EAE6DB"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              width="46"
+              height="28"
+              viewBox="0 0 46 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M38.4031 16.9103C37.9199 16.2547 37.8116 15.591 38.0757 14.9186C38.7346 13.1245 48.3308 1.72966 44.3332 1.72966C41.5861 1.76618 38.2825 1.72966 35.6489 1.72966C35.16 1.84867 34.8437 2.10525 34.6457 2.62728C33.1057 6.17832 31.2212 10.5118 28.4593 13.2969C28.0959 13.5899 27.8693 13.5774 27.4554 13.4691C25.518 11.4294 27.5838 4.44137 26.4056 1.68015C26.1734 1.13966 25.6652 0.895542 25.1451 0.758076C22.5149 0.131218 16.5076 0.504344 15.5274 1.76618C15.2473 2.12689 15.2082 2.32374 15.4104 2.35612C16.3443 2.50346 17.0055 2.85591 17.3946 3.41313C18.1286 5.02968 18.6696 13.6407 16.5076 13.6407C14.3456 13.6407 10.8593 5.18991 9.90161 2.84721C9.64674 2.14183 8.99793 1.73744 8.31429 1.61806L1.91817 1.66698C0.793885 1.66698 0.165545 2.22157 0.564035 3.3389C3.89541 11.6083 11.1856 27.6371 22.3669 27.2358C23.487 27.2358 25.4139 27.6658 26.2887 26.6947C27.4909 25.0998 26.0247 22.2593 28.0862 21.1761C28.606 20.8994 29.1449 21.1313 29.5916 21.4714C31.8845 23.2174 33.1019 26.2819 35.9296 27.2122C36.4268 27.376 36.8625 27.417 37.2365 27.3351L43.2122 27.2369C44.3217 27.2369 45.4146 26.7433 45.185 25.4169C44.3138 22.5726 40.8422 19.6488 38.4031 16.9103Z"
+                fill="#EAE6DB"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              width="37"
+              height="32"
+              viewBox="0 0 37 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.218 3.21328C36.4977 1.4066 34.7799 -0.0194273 33.1735 0.68587L1.17822 14.7335C0.0262275 15.2393 0.110493 16.9842 1.30528 17.3647L7.90351 19.4659C9.16281 19.8669 10.5264 19.6596 11.6261 18.8998L26.5022 8.62227C26.9508 8.31235 27.4397 8.95018 27.0565 9.34533L16.3484 20.3855C15.3096 21.4564 15.5158 23.2711 16.7653 24.0547L28.7541 31.5728C30.0988 32.4161 31.8287 31.569 32.0802 29.9441L36.218 3.21328Z"
+                fill="#EAE6DB"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="menu-zapreshen">*Запрещен на территории РФ</div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero-wrap">
+          <div class="hero-wrap-row">
+            <span class="hero-wrap-row-span-1">Смыслы<br />Единение </span>
+            <h1>
+              Братья <br />
+              Сергеевы
+            </h1>
+            <span class="hero-wrap-row-span-2"
+              >Семья <br />
+              Бизнес</span
+            >
+          </div>
+          <div class="hero-bg">
+            <picture>
+              <img src="images/home/bg-hero-1.webp" alt="" />
+              <source
+                srcset="../images/home/bg-hero-1-mobile.webp"
+                media="(max-width: 657px)"
+              />
+            </picture>
+          </div>
+          <div class="hero-bg-2">
+            <img src="images/home/bg-hero-2.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="presentation">
+        <div class="presentation-wrap">
+          <div class="presentation-blocks">
+            <a href="#" class="blocks-item blocks-item-1">
+              <span>ПРЕЗЕНТАЦИЯ</span>
+              <p>скачать</p>
+            </a>
+            <a href="#" class="blocks-item blocks-item-2">
+              <span>
+                <svg
+                  width="26"
+                  height="16"
+                  viewBox="0 0 26 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.7071 8.70711C26.0976 8.31659 26.0976 7.68343 25.7071 7.2929L19.3431 0.928938C18.9526 0.538414 18.3195 0.538413 17.9289 0.928938C17.5384 1.31946 17.5384 1.95263 17.9289 2.34315L23.5858 8.00001L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 8L-2.45877e-08 9L25 9.00001L25 8.00001L25 7.00001L2.45877e-08 7L0 8Z"
+                    fill="#015845"
+                  />
+                </svg>
+                СМИ
+              </span>
+            </a>
+          </div>
+          <div class="presentation-video">
+            <div class="presentation-btn">
+              <svg
+                width="46"
+                height="46"
+                viewBox="0 0 46 46"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M45.6969 22.8106L0.867361 45.123L0.867363 0.498241L45.6969 22.8106Z"
+                  fill="#015845"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="services-grid">
+          <div class="grid-item grid-item-1">
+            <span>Услуги</span>
+            <div class="grid-item-1-img">
+              <img src="images/home/uslugi-1.webp" alt="" />
+            </div>
+          </div>
+          <div class="grid-item grid-item-2">
+            <img src="images/home/uslugi-2.webp" alt="" />
+          </div>
+          <a href="#" class="grid-item grid-item-3">
+            <span
+              >Бренд- <br />
+              Платформа</span
+            >
+            <p>миссия, ценности, видение, ЦА, УТП, тон общения, айдентика</p>
+          </a>
+          <a href="#" class="grid-item grid-item-4">
+            <span
+              >Упаковка <br />
+              Инвест-Проекта</span
+            >
+            <p>презентация, визуалы, стратегия, фин.блок</p>
+          </a>
+          <div class="grid-item grid-item-5">
+            <img src="images/home/uslugi-3.webp" alt="" />
+          </div>
+          <a href="#" class="grid-item grid-item-6">
+            <span
+              >Мерч, <br />
+              Подарки</span
+            >
+            <p>Одежда, Сувениры, Корпоративные Подарки</p>
+          </a>
+          <div class="grid-item grid-item-7"></div>
+          <div class="grid-item grid-item-8">
+            <span
+              >Муралы/ <br />
+              Граффити</span
+            >
+            <p>стрит-арт</p>
+          </div>
+          <div class="grid-item grid-item-9">
+            <span
+              >Дизайн <br />
+              Рекламы</span
+            >
+            <p>концепция, визуал, оффер, призыв к действию</p>
+          </div>
+          <a href="#" class="grid-item grid-item-10">
+            <span
+              >Моушн <br />
+              Промо-Ролики</span
+            >
+            <p>Сценарий, раскадровка, озвучка, отрисовка, анимация, съемка</p>
+          </a>
+          <div class="grid-item grid-item-11">
+            <img src="images/home/bg-uslugi.webp" alt="" />
+          </div>
+          <div class="grid-item grid-item-12">
+            <img src="images/home/uslugi-4.webp" alt="" />
+          </div>
+          <div class="grid-item grid-item-13">
+            <span>НАГРАДЫ</span>
+            <img src="images/home/reward-1.webp" alt="" />
+          </div>
+          <div class="grid-item grid-item-14">
+            <img src="images/home/reward-2.webp" alt="" />
+            <p>2D/3D АНИМАЦИЯ, СТОРИТЕЛЛИНГ, ПРЕЗЕНТАЦИИ</p>
+          </div>
+          <div class="grid-item grid-item-15">
+            <img src="images/home/documents/pismo-1.png" alt="" />
+            <img src="images/home/documents/pismo-2.png" alt="" />
+            <img src="images/home/documents/pismo-3.png" alt="" />
+            <img src="images/home/documents/pismo-4.png" alt="" />
+            <img src="images/home/documents/pismo-5.png" alt="" />
+            <img src="images/home/documents/pismo-6.png" alt="" />
+          </div>
+          <div class="grid-item grid-item-16">
+            <img src="images/home/documents/pismo-7.png" alt="" />
+            <img src="images/home/documents/pismo-8.png" alt="" />
+            <img src="images/home/documents/pismo-9.png" alt="" />
+            <img src="images/home/documents/pismo-10.png" alt="" />
+            <img src="images/home/documents/pismo-11.png" alt="" />
+            <img src="images/home/documents/pismo-12.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews-wrap">
+          <div class="reviews-slider">
+            <!-- Slider main container -->
+            <div class="swiper swiper-reviews-home">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="images/home/reviews/review-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/home/reviews/review-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/home/reviews/review-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/home/reviews/review-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/home/reviews/review-1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/home/reviews/review-1.png" alt="" />
+                </div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <div
+                class="swiper-button-prev swiper-button-prev-reviews-home"
+              ></div>
+              <div
+                class="swiper-button-next swiper-button-next-reviews-home"
+              ></div>
+            </div>
+          </div>
+          <div class="reviews-block">
+            <h3>Отзывы</h3>
+            <img src="images/home/review-1.webp" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news-wrap">
+          <div class="news-block">
+            <h3>Новости</h3>
+          </div>
+          <div class="news-slider-block">
+            <div class="next-row">Новости</div>
+            <div class="news-slider">
+              <!-- Slider main container -->
+              <div class="swiper swiper-news-home">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="slide-news">
+                      <div class="slide-news-row">
+                        <p>
+                          Братья Сергеевы выступили на Бизнес фесте от Сбера в
+                          Казани 26 июня 2025 года
+                        </p>
+                        <div class="slide-img">
+                          <img src="images/home/reward-1.webp" alt="" />
+                        </div>
+                      </div>
+                      <div class="slide-date">
+                        <time datetime="2025-07-03 12:19">3 июля, 12:19</time>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-news">
+                      <div class="slide-news-row">
+                        <p>
+                          Братья Сергеевы выступили на Бизнес фесте от Сбера в
+                          Казани 26 июня 2025 года
+                        </p>
+                        <div class="slide-img">
+                          <img src="images/home/uslugi-1.webp" alt="" />
+                        </div>
+                      </div>
+                      <div class="slide-date">
+                        <time datetime="2025-07-03 12:19">3 июля, 12:19</time>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-news">
+                      <div class="slide-news-row">
+                        <p>
+                          Братья Сергеевы выступили на Бизнес фесте от Сбера в
+                          Казани 26 июня 2025 года
+                        </p>
+                        <div class="slide-img">
+                          <img src="images/home/uslugi-3.webp" alt="" />
+                        </div>
+                      </div>
+                      <div class="slide-date">
+                        <time datetime="2025-07-03 12:19">3 июля, 12:19</time>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-news">
+                      <div class="slide-news-row">
+                        <p>
+                          Братья Сергеевы выступили на Бизнес фесте от Сбера в
+                          Казани 26 июня 2025 года
+                        </p>
+                        <div class="slide-img">
+                          <img src="images/home/uslugi-2.webp" alt="" />
+                        </div>
+                      </div>
+                      <div class="slide-date">
+                        <time datetime="2025-07-03 12:19">3 июля, 12:19</time>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-news">
+                      <div class="slide-news-row">
+                        <p>
+                          Братья Сергеевы выступили на Бизнес фесте от Сбера в
+                          Казани 26 июня 2025 года
+                        </p>
+                        <div class="slide-img">
+                          <img src="images/home/uslugi-1.webp" alt="" />
+                        </div>
+                      </div>
+                      <div class="slide-date">
+                        <time datetime="2025-07-03 12:19">3 июля, 12:19</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div
+                  class="swiper-button-prev swiper-button-prev-news-home"
+                ></div>
+                <div
+                  class="swiper-button-next swiper-button-next-news-home"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <p>
+          Маркетинговое исследование; разработка маркетинговой стратегии;
+          <br />
+          создание логотипа и фирменного стиля; разработка брендбука; создание
+          сайтов; презентации и каталоги; дизайн рекламных материалов;
+          моушн-дизайн для рекламы; корпоративные подарки (открытки и др.);
+          оформление стендов; наградная атрибутика; 3D-рекламные ролики; мерч и
+          дизайн одежды; брендирование автомобилей; лифлеты
+        </p>
+      </section>
+      <section class="work">
+        <div class="work-wrap">
+          <div class="work-info">
+            <p>Отдать работу над брендом <span>команде профессионалов</span></p>
+          </div>
+          <div class="work-button">
+            <div class="work-button-img">
+              <img src="images/home/hand.webp" alt="" />
+            </div>
+            <button type="button">
+              <svg
+                width="53"
+                height="38"
+                viewBox="0 0 53 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M51.7069 20.7678C52.6832 19.7915 52.6832 18.2085 51.7069 17.2322L35.797 1.32233C34.8206 0.34602 33.2377 0.34602 32.2614 1.32233C31.2851 2.29864 31.2851 3.88155 32.2614 4.85786L46.4036 19L32.2614 33.1421C31.2851 34.1184 31.2851 35.7014 32.2614 36.6777C33.2377 37.654 34.8206 37.654 35.797 36.6777L51.7069 20.7678ZM0.939087 19V21.5H49.9391V19V16.5H0.939087V19Z"
+                  fill="#015845"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrap">
+        <div class="footer-nav">
+          <div class="footer-nav-title footer-title">Меню</div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">О нас </a>
+              </li>
+              <li>
+                <a href="#">Услуги</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-social">
+          <div class="footer-social-title footer-title">Медиа</div>
+          <div class="footer-social-link">
+            <a href="#">
+              <svg
+                width="25"
+                height="26"
+                viewBox="0 0 25 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.25 6.05762C21.25 7.09315 20.4105 7.93262 19.375 7.93262C18.3395 7.93262 17.5 7.09315 17.5 6.05762C17.5 5.02208 18.3395 4.18262 19.375 4.18262C20.4105 4.18262 21.25 5.02208 21.25 6.05762Z"
+                  fill="#015845"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.5 19.1826C15.9518 19.1826 18.75 16.3844 18.75 12.9326C18.75 9.48084 15.9518 6.68262 12.5 6.68262C9.04822 6.68262 6.25 9.48084 6.25 12.9326C6.25 16.3844 9.04822 19.1826 12.5 19.1826ZM12.5 16.6826C14.5711 16.6826 16.25 15.0037 16.25 12.9326C16.25 10.8615 14.5711 9.18262 12.5 9.18262C10.4289 9.18262 8.75 10.8615 8.75 12.9326C8.75 15.0037 10.4289 16.6826 12.5 16.6826Z"
+                  fill="#015845"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 12.4326C0 8.23222 0 6.13203 0.817451 4.52769C1.5365 3.11647 2.68386 1.96912 4.09507 1.25007C5.69941 0.432617 7.79961 0.432617 12 0.432617H13C17.2004 0.432617 19.3006 0.432617 20.9049 1.25007C22.3161 1.96912 23.4635 3.11647 24.1825 4.52769C25 6.13203 25 8.23222 25 12.4326V13.4326C25 17.633 25 19.7332 24.1825 21.3375C23.4635 22.7488 22.3161 23.8961 20.9049 24.6152C19.3006 25.4326 17.2004 25.4326 13 25.4326H12C7.79961 25.4326 5.69941 25.4326 4.09507 24.6152C2.68386 23.8961 1.5365 22.7488 0.817451 21.3375C0 19.7332 0 17.633 0 13.4326V12.4326ZM12 2.93262H13C15.1414 2.93262 16.5972 2.93456 17.7224 3.0265C18.8184 3.11605 19.379 3.27836 19.77 3.47758C20.7108 3.95695 21.4757 4.72185 21.955 5.66266C22.1543 6.05366 22.3166 6.61417 22.4061 7.71021C22.4981 8.83543 22.5 10.2912 22.5 12.4326V13.4326C22.5 15.5741 22.4981 17.0298 22.4061 18.155C22.3166 19.2511 22.1543 19.8116 21.955 20.2026C21.4757 21.1434 20.7108 21.9083 19.77 22.3876C19.379 22.5869 18.8184 22.7492 17.7224 22.8387C16.5972 22.9307 15.1414 22.9326 13 22.9326H12C9.85855 22.9326 8.40282 22.9307 7.27759 22.8387C6.18156 22.7492 5.62105 22.5869 5.23005 22.3876C4.28924 21.9083 3.52433 21.1434 3.04497 20.2026C2.84574 19.8116 2.68343 19.2511 2.59388 18.155C2.50194 17.0298 2.5 15.5741 2.5 13.4326V12.4326C2.5 10.2912 2.50194 8.83543 2.59388 7.71021C2.68343 6.61417 2.84574 6.05366 3.04497 5.66266C3.52433 4.72185 4.28924 3.95695 5.23005 3.47758C5.62105 3.27836 6.18156 3.11605 7.27759 3.0265C8.40282 2.93456 9.85855 2.93262 12 2.93262Z"
+                  fill="#015845"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.40625 0.375V16.625L16.6562 8.5L0.40625 0.375Z"
+                  fill="#015845"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg
+                width="28"
+                height="17"
+                viewBox="0 0 28 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.1363 10.1032C22.8531 9.71895 22.7896 9.32997 22.9444 8.93585C23.3306 7.88433 28.955 1.20568 26.612 1.20568C25.0019 1.22708 23.0656 1.20568 21.522 1.20568C21.2355 1.27544 21.0501 1.42582 20.934 1.73179C20.0314 3.81309 18.9269 6.35301 17.3081 7.98539C17.0951 8.1571 16.9623 8.14978 16.7197 8.08628C15.5842 6.8908 16.795 2.79505 16.1044 1.17666C15.9683 0.859878 15.6704 0.716796 15.3656 0.636226C13.824 0.268818 10.3031 0.487511 9.72861 1.22708C9.56438 1.4385 9.54147 1.55388 9.66003 1.57286C10.2074 1.65921 10.5949 1.86579 10.8229 2.19238C11.2532 3.13986 11.5702 8.18687 10.3031 8.18687C9.03592 8.18687 6.99258 3.23377 6.43124 1.86069C6.28186 1.44726 5.90158 1.21024 5.50089 1.14027L1.75206 1.16894C1.0931 1.16894 0.724823 1.494 0.958383 2.14888C2.91094 6.99564 7.18379 16.3903 13.7373 16.1551C14.3938 16.1551 15.5232 16.4071 16.0359 15.838C16.7405 14.9032 15.8812 13.2384 17.0894 12.6034C17.3941 12.4413 17.71 12.5772 17.9717 12.7766C19.3157 13.7999 20.0292 15.596 21.6866 16.1413C21.978 16.2373 22.2333 16.2613 22.4525 16.2133L25.955 16.1558C26.6052 16.1558 27.2458 15.8664 27.1112 15.0891C26.6006 13.422 24.5659 11.7083 23.1363 10.1032Z"
+                  fill="#015845"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg
+                width="22"
+                height="19"
+                viewBox="0 0 22 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.2194 1.73074C21.3833 0.671825 20.3765 -0.163985 19.435 0.249397L0.682185 8.48288C0.00699226 8.77933 0.0563809 9.80203 0.756659 10.025L4.62395 11.2566C5.36205 11.4916 6.16128 11.3701 6.80581 10.9248L15.5248 4.90101C15.7878 4.71936 16.0744 5.0932 15.8497 5.3248L9.57359 11.7956C8.96476 12.4233 9.08561 13.4869 9.81792 13.9461L16.8447 18.3526C17.6329 18.8468 18.6468 18.3503 18.7942 17.398L21.2194 1.73074Z"
+                  fill="#015845"
+                />
+              </svg>
+            </a>
+          </div>
+          <span class="zapreshen">*Запрещен на территории РФ</span>
+        </div>
+        <div class="footer-info">
+          <div class="footer-info-title footer-title">Инфо</div>
+          <div class="footer-information">
+            <p>
+              ООО "Братья Сергеевы" <br />ИНН: 1686036881 <br />КПП: 168601001
+            </p>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <div class="footer-contact-title footer-title">Контакты</div>
+          <div class="footer-contact-link">
+            <span>Спартаковская 2А <br />Пн-Пт с 10:00 до 19:00</span>
+            <a href="mailto:sd@sergeev.design">sd@sergeev.design</a>
+            <a href="tel:+79033440444">+79033440444</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-logo">
+        Братья <br />
+        Сергеевы
+      </div>
+      <div class="footer-bg">
+        <img src="images/home/telephone.webp" alt="" />
+      </div>
+    </footer>
+  </body>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</html>
