@@ -5,8 +5,16 @@ if (swiperReviewsHome) {
     // Optional parameters
     loop: true,
     centeredSlides: true,
-    slidesPerView: 2.3,
+    slidesPerView: 1.3,
     spaceBetween: 30,
+
+    breakpoints: {
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 2.3,
+        spaceBetween: 30,
+      },
+    },
 
     // Navigation arrows
     navigation: {
@@ -22,8 +30,16 @@ if (swiperNewsHome) {
   const swiperNewsHome = new Swiper(".swiper-news-home", {
     // Optional parameters
     loop: true,
-    slidesPerView: 1.9,
+    slidesPerView: 1.1,
     spaceBetween: 15,
+
+    breakpoints: {
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 1.9,
+        spaceBetween: 15,
+      },
+    },
 
     // Navigation arrows
     navigation: {
