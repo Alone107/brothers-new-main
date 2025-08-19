@@ -2125,6 +2125,24 @@ img {
   margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
+.presentation-video video {
+=======
+.presentation-video iframe {
+>>>>>>> f40091c940fd277c80ff078c9781ec250661acac
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.presentation-btn {
+  display: none;
+}
+
+.video-mobile {
+  display: none;
+}
+
 @media (max-width: 1440px) {
   .header-menu-btn span {
     font-size: 20px;
@@ -3095,6 +3113,25 @@ img {
   }
   .smi-time {
     font-size: 20px;
+  }
+  .presentation-btn {
+    display: flex;
+  }
+<<<<<<< HEAD
+  .presentation-video video {
+=======
+  .presentation-video iframe {
+>>>>>>> f40091c940fd277c80ff078c9781ec250661acac
+    display: none;
+  }
+  .video-mobile {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    z-index: 3;
+    position: relative;
   }
 }
 @media (max-width: 800px) {
