@@ -543,9 +543,9 @@ img {
   max-height: 480px;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
   height: 100%;
 }
 
@@ -594,7 +594,7 @@ img {
   max-height: 480px;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .grid-item-12 {
@@ -752,7 +752,7 @@ img {
 
 .slide-img img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
   width: 100%;
   border-radius: 8px;
@@ -809,7 +809,7 @@ img {
 
 .work-bg img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .work-info p {
@@ -1372,7 +1372,7 @@ img {
 
 .platforma-block-2 img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   max-width: 250px;
 }
 
@@ -2125,6 +2125,20 @@ img {
   margin-bottom: 15px;
 }
 
+.presentation-video iframe {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.presentation-btn {
+  display: none;
+}
+
+.video-mobile {
+  display: none;
+}
+
 @media (max-width: 1440px) {
   .header-menu-btn span {
     font-size: 20px;
@@ -2191,7 +2205,7 @@ img {
   }
   .grid-item-2 img {
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: 100%;
   }
   .grid-item-11 img {
@@ -2202,7 +2216,7 @@ img {
   }
   .grid-item-12 img {
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: 100%;
   }
   .grid-item-15 {
@@ -2214,7 +2228,7 @@ img {
   .grid-item-14 img {
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     max-width: 240px;
   }
   .grid-item-14 {
@@ -3085,7 +3099,7 @@ img {
     max-height: 360px;
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .smi-name {
     font-size: 24px;
@@ -3095,6 +3109,21 @@ img {
   }
   .smi-time {
     font-size: 20px;
+  }
+  .presentation-btn {
+    display: flex;
+  }
+  .presentation-video iframe {
+    display: none;
+  }
+  .video-mobile {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    z-index: 3;
+    position: relative;
   }
 }
 @media (max-width: 800px) {
@@ -3177,7 +3206,7 @@ img {
   }
   .blocks-item p {
     -webkit-text-decoration: n;
-            text-decoration: n;
+    text-decoration: n;
   }
   .grid-item {
     font-size: 17px;
@@ -3731,4 +3760,4 @@ img {
   .hero {
     height: 60vh;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
