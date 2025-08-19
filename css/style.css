@@ -2139,6 +2139,10 @@ img {
   display: none;
 }
 
+iframe .videoplayer_media_provider {
+  background-color: var(--green);
+}
+
 @media (max-width: 1440px) {
   .header-menu-btn span {
     font-size: 20px;

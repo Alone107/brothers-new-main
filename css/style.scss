@@ -2152,6 +2152,10 @@ img {
   display: none;
 }
 
+iframe .videoplayer_media_provider {
+  background-color: var(--green);
+}
+
 // -----------media-----------------------
 
 @media (max-width: 1440px) {
