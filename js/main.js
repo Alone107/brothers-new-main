@@ -92,3 +92,8 @@ if (burgerBtn) {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  let videoPlayerBg = document.querySelector(".videoplayer_media_provider");
+  videoPlayerBg.style.backgroundColor = "#015845";
+});
