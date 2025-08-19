@@ -49,6 +49,21 @@ if (swiperNewsHome) {
   });
 }
 
+const swiperProject = document.querySelector(".swiper-project");
+
+if (swiperProject) {
+  const swiperProject = new Swiper(".swiper-project", {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 15,
+    grabCursor: true,
+    autoplay: {
+      delay: 5000, // задержка в миллисекундах между слайдами
+    },
+  });
+}
+
 // ---------burger-----------------
 
 const burgerBtn = document.getElementById("burger");
