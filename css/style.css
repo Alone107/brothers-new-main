@@ -543,9 +543,9 @@ img {
   max-height: 480px;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
   height: 100%;
 }
 
@@ -594,7 +594,7 @@ img {
   max-height: 480px;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .grid-item-12 {
@@ -752,7 +752,7 @@ img {
 
 .slide-img img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
   width: 100%;
   border-radius: 8px;
@@ -809,7 +809,7 @@ img {
 
 .work-bg img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .work-info p {
@@ -1372,7 +1372,7 @@ img {
 
 .platforma-block-2 img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   max-width: 250px;
 }
 
@@ -2143,6 +2143,20 @@ iframe .videoplayer_media_provider {
   background-color: var(--green);
 }
 
+.presentation-video video {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.presentation-btn {
+  display: none;
+}
+
+.video-mobile {
+  display: none;
+}
+
 @media (max-width: 1440px) {
   .header-menu-btn span {
     font-size: 20px;
@@ -2209,7 +2223,7 @@ iframe .videoplayer_media_provider {
   }
   .grid-item-2 img {
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: 100%;
   }
   .grid-item-11 img {
@@ -2220,7 +2234,7 @@ iframe .videoplayer_media_provider {
   }
   .grid-item-12 img {
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: 100%;
   }
   .grid-item-15 {
@@ -2232,7 +2246,7 @@ iframe .videoplayer_media_provider {
   .grid-item-14 img {
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     max-width: 240px;
   }
   .grid-item-14 {
@@ -3103,7 +3117,7 @@ iframe .videoplayer_media_provider {
     max-height: 360px;
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .smi-name {
     font-size: 24px;
@@ -3117,7 +3131,7 @@ iframe .videoplayer_media_provider {
   .presentation-btn {
     display: flex;
   }
-  .presentation-video iframe {
+  .presentation-video video {
     display: none;
   }
   .video-mobile {
@@ -3210,7 +3224,7 @@ iframe .videoplayer_media_provider {
   }
   .blocks-item p {
     -webkit-text-decoration: n;
-            text-decoration: n;
+    text-decoration: n;
   }
   .grid-item {
     font-size: 17px;
@@ -3764,4 +3778,4 @@ iframe .videoplayer_media_provider {
   .hero {
     height: 60vh;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
