@@ -93,7 +93,104 @@ if (burgerBtn) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  let videoPlayerBg = document.querySelector(".videoplayer_media_provider");
-  videoPlayerBg.style.backgroundColor = "#015845";
-});
+const investBtn = document.getElementById("invest-btn");
+const bannerInvest = document.querySelector(".banner-invest");
+const bannerInvestBlock = document.querySelector(".banner-invest-block");
+
+if (investBtn && bannerInvest) {
+  // Открытие при клике на кнопку
+  investBtn.addEventListener("click", (event) => {
+    event.stopPropagation(); // Предотвращаем всплытие события
+    bannerInvest.classList.add("show");
+  });
+
+  // Закрытие при клике мимо
+  document.addEventListener("click", (event) => {
+    if (
+      !bannerInvestBlock.contains(event.target) &&
+      !investBtn.contains(event.target)
+    ) {
+      bannerInvest.classList.remove("show");
+    }
+  });
+}
+
+const merchBtn = document.getElementById("merch-btn");
+const bannerMerch = document.querySelector(".banner-merch");
+const bannerMerchBlock = document.querySelector(".banner-merch-block");
+
+if (merchBtn && bannerMerch) {
+  // Открытие при клике на кнопку
+  merchBtn.addEventListener("click", (event) => {
+    event.stopPropagation(); // Предотвращаем всплытие события
+    bannerMerch.classList.add("show");
+  });
+
+  // Закрытие при клике мимо
+  document.addEventListener("click", (event) => {
+    if (
+      !bannerMerchBlock.contains(event.target) &&
+      !merchBtn.contains(event.target)
+    ) {
+      bannerMerch.classList.remove("show");
+    }
+  });
+}
+
+const gridItem13 = document.querySelector(".grid-item-13");
+const bannerZapros = document.querySelector(".banner-zapros");
+
+if (gridItem13 && bannerZapros) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          bannerZapros.classList.add("show");
+        }
+      });
+    },
+    {
+      threshold: 0.5, // Добавим класс, когда элемент будет виден на 50%
+    }
+  );
+
+  const bannerZaprosBlock = document.querySelector(".banner-zapros-block");
+
+  // Закрытие при клике мимо
+  document.addEventListener("click", (event) => {
+    if (!bannerZaprosBlock.contains(event.target)) {
+      bannerZapros.classList.remove("show");
+    }
+  });
+
+  observer.observe(gridItem13);
+}
+
+const projectWrap = document.querySelector(".project");
+const bannerZaprosTwo = document.querySelector(".banner-zapros-2");
+
+if (projectWrap && bannerZaprosTwo) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          bannerZaprosTwo.classList.add("show");
+        }
+      });
+    },
+    {
+      threshold: 0.5, // Добавим класс, когда элемент будет виден на 50%
+    }
+  );
+
+  const bannerZaprosBlock = document.querySelector(".banner-zapros-block");
+
+  // Закрытие при клике мимо
+  document.addEventListener("click", (event) => {
+    if (!bannerZaprosBlock.contains(event.target)) {
+      bannerZaprosTwo.classList.remove("show");
+    }
+  });
+
+  observer.observe(projectWrap);
+}
