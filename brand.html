@@ -626,7 +626,7 @@
               <p>Сделать бренд понятным — себе, команде, рынку</p>
             </div>
             <div class="work-block-img">
-              <img src="images/home/brand/work-3.png" alt="" />
+              <img src="images/home/brand/work-4.png" alt="" />
             </div>
           </div>
         </div>
@@ -650,7 +650,7 @@
                 <label for="telephone"
                   >Номер телефона <span>(Обещаем не спамить)</span></label
                 >
-                <input type="tel" id="telephone" />
+                <input class="input-phone" type="tel" id="telephone" />
               </div>
             </div>
           </div>
@@ -805,7 +805,41 @@
         </div>
       </div>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/maska-nomera.js" type="text/javascript"></script>
+
+    <script>
+      $(".input-phone").mask("+7 (999) 999-99-99");
+
+      $.fn.setCursorPosition = function (pos) {
+        if ($(this).get(0).setSelectionRange) {
+          $(this).get(0).setSelectionRange(pos, pos);
+        } else if ($(this).get(0).createTextRange) {
+          var range = $(this).get(0).createTextRange();
+          range.collapse(true);
+          range.moveEnd("character", pos);
+          range.moveStart("character", pos);
+          range.select();
+        }
+      };
+
+      $('input[type="tel"]').click(function () {
+        $(this).setCursorPosition(4); // set position number
+      });
+    </script>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
+
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </html>

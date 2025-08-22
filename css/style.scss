@@ -215,6 +215,7 @@ a:hover {
   color: #fffcf3;
   margin-bottom: 50px;
   align-items: center;
+  cursor: pointer;
 }
 
 .close span {
@@ -587,6 +588,7 @@ a:hover {
 .grid-item-6 {
   background: var(--green);
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .grid-item-6:hover {
@@ -1103,6 +1105,18 @@ a:hover {
   gap: 20px;
 }
 
+.header-back path {
+  transition: all 0.5s;
+}
+
+.header-back:hover .header-back-arrow {
+  background: var(--green);
+}
+
+.header-back:hover path {
+  fill: #fff;
+}
+
 .header-audit {
   display: flex;
   font-family: var(--font-family);
@@ -1119,6 +1133,18 @@ a:hover {
   text-align: right;
 }
 
+.header-audit path {
+  transition: all 0.5s;
+}
+
+.header-audit:hover .header-back-arrow {
+  background: var(--green);
+}
+
+.header-audit:hover path {
+  fill: #fff;
+}
+
 .header-back-arrow {
   width: 60px;
   height: 60px;
@@ -1127,6 +1153,7 @@ a:hover {
   justify-content: center;
   border-radius: 100%;
   background: #fffcf3;
+  transition: all 0.5s;
 }
 
 .hero-brand {
@@ -1135,6 +1162,10 @@ a:hover {
 
 .hero-brand-bg {
   margin-top: -200px;
+}
+
+.hero-brand-bg img {
+  width: 100%;
 }
 
 .header-nav {
@@ -1316,6 +1347,7 @@ a:hover {
   text-align: left;
   position: relative;
   z-index: 6;
+  justify-content: flex-start;
 }
 
 .block-pozicion-1:hover {
@@ -2296,7 +2328,7 @@ a:hover {
 }
 
 .work-button-img.work-button-img-2 {
-  max-width: 500px;
+  max-width: 420px;
 }
 
 .form-block-row {
@@ -2338,7 +2370,7 @@ a:hover {
 
 .work-button-img-2 img {
   width: 100%;
-  max-height: 380px;
+  max-height: 300px;
   margin-left: -30px;
 }
 
@@ -2518,7 +2550,6 @@ iframe .videoplayer_media_provider {
   display: flex;
   gap: 15px;
   margin-bottom: 30px;
-  align-items: flex-end;
 }
 
 .form-row label {
@@ -2535,7 +2566,7 @@ iframe .videoplayer_media_provider {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 24px;
-  line-height: 132%;
+  line-height: 110%;
   color: #3b3b3b;
 }
 .form-row textarea {
@@ -2544,6 +2575,29 @@ iframe .videoplayer_media_provider {
   width: 100%;
   position: relative;
   font-size: 20px;
+  text-decoration: underline;
+  transition: all 0.5s;
+  line-height: 105%;
+  max-height: 25px;
+  text-underline-offset: 4px;
+}
+
+.form-row textarea:focus-visible {
+  border-bottom: none;
+  max-height: none;
+  line-height: 130%;
+}
+
+.form-row textarea:focus {
+  border-bottom: none;
+  max-height: none;
+  line-height: 130%;
+}
+
+.form-row textarea:active {
+  border-bottom: none;
+  max-height: none;
+  line-height: 130%;
 }
 
 .invest-btn {
@@ -2558,6 +2612,11 @@ iframe .videoplayer_media_provider {
   display: block;
   background: transparent;
   margin-bottom: 30px;
+  transition: all 0.5s;
+}
+
+.invest-btn:hover {
+  color: #74332b;
 }
 
 .merch-block-body {
@@ -2572,6 +2631,10 @@ iframe .videoplayer_media_provider {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-zapros-block {
@@ -4121,6 +4184,7 @@ iframe .videoplayer_media_provider {
   .what-vhod-grid {
     margin-bottom: 40px;
     align-items: flex-start;
+    gap: 30px;
   }
   .what-span {
     font-size: 24px;
@@ -4160,7 +4224,7 @@ iframe .videoplayer_media_provider {
     width: 100%;
     max-height: 167px;
     margin-left: 25px;
-    max-width: 250px;
+    max-width: 190px;
   }
   .work-button-img.work-button-img-2 {
     max-width: 250px;
@@ -4213,8 +4277,19 @@ iframe .videoplayer_media_provider {
   .form-row input {
     font-size: 16px;
   }
+
+  .form-row textarea {
+    font-size: 16px;
+  }
   .invest-btn {
     font-size: 20px;
+  }
+  .hero-wrap-row.hero-wrap-row-2 h1 {
+    font-size: 32px;
+  }
+  .work-block-3 + .work-block-img {
+    justify-content: flex-end;
+    align-items: flex-start;
   }
 }
 
