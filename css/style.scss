@@ -1473,6 +1473,8 @@ a:hover {
   grid-column-start: 4;
   grid-column-end: 4;
   position: relative;
+  justify-content: flex-end;
+  padding-right: 30px;
 }
 .block-pozicion-11:hover {
   background: #dad4c4;
@@ -2646,6 +2648,10 @@ iframe .videoplayer_media_provider {
   max-width: none;
   text-align: center;
 }
+
+.project-row-wrap .arrow {
+  display: none;
+}
 // -----------media-----------------------
 
 @media (max-width: 1440px) {
@@ -2982,6 +2988,9 @@ iframe .videoplayer_media_provider {
   }
   .invest-block-body {
     padding-top: 40px;
+  }
+  .block-pozicion-11 {
+    padding-right: 30px;
   }
 }
 
@@ -4051,7 +4060,11 @@ iframe .videoplayer_media_provider {
   }
   .guidline-block span {
     font-size: 4px;
-    margin-left: 65px;
+    margin-left: 3vw;
+  }
+
+  .guidline-block-1::before {
+    top: 89%;
   }
 
   .project-block-1 {
@@ -4290,6 +4303,21 @@ iframe .videoplayer_media_provider {
   .work-block-3 + .work-block-img {
     justify-content: flex-end;
     align-items: flex-start;
+  }
+  .project-row-wrap {
+    position: relative;
+  }
+  .project-row-wrap .arrow {
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .project-row-wrap .arrow svg {
+    width: 5vw;
   }
 }
 

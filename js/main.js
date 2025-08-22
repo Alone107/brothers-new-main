@@ -146,6 +146,7 @@ if (gridItem13 && bannerZapros) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           bannerZapros.classList.add("show");
+          observer.disconnect();
         }
       });
     },
@@ -175,6 +176,7 @@ if (projectWrap && bannerZaprosTwo) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           bannerZaprosTwo.classList.add("show");
+          observer.disconnect();
         }
       });
     },
